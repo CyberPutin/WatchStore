@@ -1,0 +1,57 @@
+.banner {
+    padding: 52px 0 53px;
+    background: url("../img/lines-banner.png") no-repeat right, linear-gradient(90deg, #f7f5ef 29%, #fdfdfb 29%);
+
+    &-container {
+        display: flex;
+    }
+
+    &-left {
+        width: 44%;
+    }
+
+    &-img-wrapper {
+        padding: 0;
+        margin: 0;
+    }
+      
+    &-img {
+        width: 100%;
+    }
+
+    &-right {
+        padding: 72px 65px;
+        width: 56%
+    }
+
+    &-title {
+        margin: 0;
+        margin-bottom: 38px;
+        font-family: "Playfair Display";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 2em;
+        line-height: normal;
+        color: #1b1A17;
+    }
+
+    &-description {
+        margin: 0;
+        margin-bottom: 45px;
+        font-weight: 400;
+        font-size: 1em;
+        line-height: 1.5;
+        color: #444240;
+    }
+
+    &-link {
+        padding: 26px 38px;
+        font-weight: 500;
+        font-size: 0.75em;
+        line-height: normal;
+        letter-spacing: 0.05em;
+        text-transform: uppercase;
+        color: #fff;
+        background-color: #D4B098;
+    }
+}

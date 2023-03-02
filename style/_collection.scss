@@ -1,0 +1,98 @@
+@import './mixins';
+
+.collection {
+  &-content {
+    padding-right: 401px;
+  }
+
+  &-main {
+    position: relative;
+    background-image: url("../img/ellipse_main.png");
+    background-position-x: right;
+    background-repeat: no-repeat;
+  }
+
+  &-text {
+    padding: 236px 0 236px 90px;
+  }
+
+  &-title {
+    position: relative;
+    margin: 0;
+    margin-bottom: 16px;
+    font-family: 'PlayfairDisplay';
+    font-weight: 400;
+    font-size: 2.8em;
+    line-height: normal;
+    color: #1b1A17;
+    @include psevdoLine;
+    &:before {
+      left: -70px
+    }
+  }
+
+  &-subtitle {
+    margin: 0;
+    margin-bottom: 39px;
+    font-family: 'PlayfairDisplay';
+    font-weight: 400;
+    font-size: 1.9em;
+    line-height: normal;
+    color: #1b1A17;
+  }
+
+  &-description {
+    margin: 0;
+    margin-bottom: 64px;
+    max-width: 258px;
+    font-weight: 300;
+    font-size: 0.9em;
+    line-height: 1.5;
+    color: #666;
+  }
+
+  &-link {
+    padding: 26px 38px;
+    font-weight: 500;
+    font-size: 0.75em;
+    line-height: normal;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: #fff;
+    background-color: #444240;
+  }
+
+  &-picture {
+    position: absolute;
+    top: -25px;
+    right: -200px;
+  }
+
+  &-characteristic {
+    position: absolute;
+    font-family: "Prata";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 0.75em;
+  }
+
+  &-price {
+    padding-right: 70px;
+    top: 150px;
+    left: -70px;
+    @include psevdoLine;
+    &::before {
+      right: 0;
+    }
+  }
+
+  &-parameters {
+    padding-left: 70px;
+    bottom: 150px;
+    right: -70px;
+    @include psevdoLine;
+    &::before {
+      left: 0;
+    }
+  }
+}

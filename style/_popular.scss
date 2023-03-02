@@ -1,0 +1,90 @@
+@import './mixins';
+
+.popular {
+    padding-top: 79px;
+    padding-bottom: 86px;
+
+    &-header {
+        display: flex;
+    }
+
+    &-title {
+        margin: auto;
+        align-self: center;
+        font-family: "PlayfairDisplay";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 2em;
+        color: #1b1A17;
+    }
+    
+    &-view-all {
+        display: inline-block;
+        margin-left: 1000px;
+        border-bottom: 1px solid #c4c0b6;
+        font-weight: 500;
+        font-size: 1em;
+        line-height: normal;
+        color: #444240;
+    }
+  
+    &-cards {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 30px;
+    }
+
+    &-card {
+        padding: 40px 29px;
+        background-color: #fdfdfb;
+    }
+
+    &-subtitle {
+        margin: 0;
+        padding-left: 10px;
+        margin-bottom: 10px;
+        font-family: 'Playfair Display';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 0.9em;
+        line-height: normal;
+        letter-spacing: 0.03em;
+        text-transform: uppercase;
+        color: #666;
+    }
+
+    &__price {
+        padding-left: 10px;
+        font-family: 'Prata';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 0.75em;
+        line-height: normal;
+        color: #666;
+
+    }
+
+    &-picture {
+        margin-bottom: 19px;
+        background-image: url("../img/ellipse.png");
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: contain;
+    }
+    
+    &-link {
+        position: relative;
+        padding-left: 50px;
+        font-family: 'Playfair Display';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 1em;
+        line-height: normal;
+        color: #1b1A17;
+        @include psevdoLine;
+        &::before {
+            left: 0;
+            width: 30px;
+        }
+    }
+}

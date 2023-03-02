@@ -1,0 +1,60 @@
+.header {
+  padding: 36px 0;
+
+  &-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &-logo {
+    display: block;
+  }
+  
+  &-categories {
+    display: flex;
+  }
+
+  &-category:not(:last-child) {
+    margin-right: 65px;
+  }
+
+  &-link {
+    font-weight: 400;
+    font-size: 00.9em;
+    line-height: normal;
+    color: #555248;
+  }
+
+  &-icons {
+    display: flex;
+  }
+
+  &-icon:not(:last-child) {
+    margin-right: 23px;
+  }
+
+  &-icon__wishlist {
+    position: relative;
+  }
+
+  &-counter {
+  position: absolute;
+  top: -7px;
+  right: -3px;
+  border-radius: 50%;
+  width: 13px;
+  height: 13px;
+  font-size: 8px;
+  line-height: normal;
+  text-align: center;
+  background-color: #e6c8b4;
+  }
+
+  &-icon__text {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  clip: rect(1px, 1px, 1px, 1px);
+  }
+}
